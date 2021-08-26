@@ -48,7 +48,6 @@ Menu();
     }
 
     function viewRoles(){
-        //shows the job title, role id, role salary, and department of role
         let roleQuery = 'SELECT * FROM role'
         db.query(roleQuery, (error, data) =>{
             if(error){
@@ -60,8 +59,6 @@ Menu();
     }
 
     function viewEmployees(){
-        //shows emp IDs, first and last name, job title, department, salary,
-        // and boss
         let empQuery = 'SELECT * FROM employee'
         db.query(empQuery, (error, data) => {
             if(error){
